@@ -13,7 +13,7 @@ and the official document: https://developer.apple.com/library/ios/documentation
 
 There are three major mobile GPU vendors nowadays and they provide decent graphics profiling tools:
 
-- For ARM Mali GPU: http://malideveloper.arm.com/resources/tools/mali-graphics-debugger/
+- For ARM Mali GPU: //malideveloper.arm.com/resources/tools/mali-graphics-debugger/
 - For Imagination PowerVR GPU: https://community.imgtec.com/developers/powervr/tools/pvrtune/
 - For Qualcomm Adreno GPU: https://developer.qualcomm.com/software/adreno-gpu-profiler
 
@@ -48,7 +48,7 @@ Also don't do heavy compute operations in your game loop which means don't let t
 Never!
 
 #### The GPU is often limited by the overdraw(fillrate) and bandwidth.
-If you are creating a 2D game and you don't write complex shaders, you might won't suffer GPU issues.
+If you are creating a 2D game and you don't write complex shaders, you might not suffer GPU issues.
 But the overdraw problem still has trouble and it will slow your graphics performance with too much bandwidth consumption.
 
 Though modern mobile GPU have TBDR(Tiled-based Defered Rendering) architecture, but only PowerVR's HSR(Hidden Surface Removal)

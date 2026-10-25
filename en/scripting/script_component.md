@@ -12,15 +12,15 @@ and these bindings are only available in their respective project types.
 
 Example with Lua:
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 // create a Sprite and add a LUA component
 auto player = Sprite::create("player.png");
 
 auto luaComponent = ComponentLua::create("player.lua");
 player->addComponent(luaComponent);
-{%- endcodetabs %}
+```
 
-{% codetabs name="Lua", type="lua" -%}
+```lua
 -- player.lua
 
 local player = {
@@ -39,21 +39,21 @@ local player = {
 
 -- it is needed to return player to let c++ nodes know it
 return player
-{%- endcodetabs %}
+```
 
 
 Example with JavaScript:
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 // create a Sprite and add a LUA component
 auto player = Sprite::create("player.png");
 
 auto jsComponent = ComponentJS::create("player.js");
 player->addComponent(jsComponent);
-{%- endcodetabs %}
+```
 
 
-{% codetabs name="JavaScript", type="js" -%}
+```javascript
 // player.js
 Player = cc.ComponentJS.extend({
     generateProjectile: function (x, y) {
@@ -108,7 +108,7 @@ Player = cc.ComponentJS.extend({
         }, owner);
     }
 });
-{%- endcodetabs %}
+```
 
 One difference to keep in mind, between JavaScript and LUA components, is you
 should return the __object__ in LUA component, in JavaScript, you only have to
@@ -1079,7 +1079,7 @@ the mac version. The process of the windows version is almost the same.
 
 ## Prerequisite
 If you have been not installed the Cocos Code IDE,you can refer to
-[Cocos Code IDE Installation](http://www.Cocos2d-x.org/wiki/Cocos_Code_IDE).
+[Cocos Code IDE Installation](https://cocos2d-x.org/wiki/Cocos_Code_IDE).
 
 ## Cocos Code IDE Configuration
 
@@ -1172,7 +1172,7 @@ runtime to debug
 ### Debug on an iOS Device
 
 1.You need a runtime IPA, you can build a custom runtime IPA by Cocos Code IDE,
-then [install runtime IPA](http://www.solutionanalysts.com/blog/how-install-ipa-file-iphone-ipod-ipad-using-itunes-mac-windows)
+then [install runtime IPA](//www.solutionanalysts.com/blog/how-install-ipa-file-iphone-ipod-ipad-using-itunes-mac-windows)
 to iOS device.
 
   - Click `Build Runtime` on the toolbars

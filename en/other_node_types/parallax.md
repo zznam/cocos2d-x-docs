@@ -13,14 +13,14 @@ require the use of multiple nodes to function. A `ParallaxNode` cannot function
 by itself. You need at least 2 other `Node` objects to complete a `ParallaxNode`.
 As usual, in true Cocos2d-x fashion, a `ParallaxNode` is easy to create:
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 // create ParallaxNode
 auto paraNode = ParallaxNode::create();
-{%- endcodetabs %}
+```
 
 Since you need multiple `Node` objects, they too are easily added:
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 // create ParallaxNode
 auto paraNode = ParallaxNode::create();
 
@@ -31,8 +31,8 @@ paraNode->addChild(background, -1, Vec2(0.4f,0.5f), Vec2::ZERO);
 paraNode->addChild(middle_layer, 1, Vec2(2.2f,1.0f), Vec2(0,-200) );
 
 // top image is moved at a ratio of 3.0x, 2.5y
-paraNode->addChild(top layer, 2, Vec2(3.0f,2.5f), Vec2(200,800) );
-{%- endcodetabs %}
+paraNode->addChild(top_layer, 2, Vec2(3.0f,2.5f), Vec2(200,800) );
+```
 
 OK, looks and feels familiar, right? Notice a few items! Each `Node` object that
 was added is given a unique __z-order__ so that they stack on top of each other.

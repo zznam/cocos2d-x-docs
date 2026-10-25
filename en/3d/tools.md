@@ -23,9 +23,9 @@ formats. FBX is the most popular 3D file format and is being supported by all
 the major editors. __fbx-conv__ exports to __.c3b__ by default. It is simple to use
 with just a few parameters:
 
-{% codetabs name="shell", type="sh" -%}
+```sh
 fbx-conv [-a|-b|-t] FBXFile
-{%- endcodetabs %}
+```
 
 The possible switches are:
 
@@ -36,9 +36,9 @@ The possible switches are:
 
 Example:
 
-{% codetabs name="shell", type="sh" -%}
+```sh
 fbx-conv -a boss.FBX
-{%- endcodetabs %}
+```
 
 There are a few things to note about __fbx-conv__:
 * The model needs to have a material that contains at least one texture
@@ -50,7 +50,7 @@ There are a few things to note about __fbx-conv__:
 ## 3D File Formats
 Cocos2d-x currently supports two 3d file formats:
 
-* [Wavefront Object](http://en.wikipedia.org/wiki/Wavefront_.obj_file) files:
+* [Wavefront Object](http:////en.wikipedia.org/wiki/Wavefront_.obj_file) files:
 __.obj__ files
 * Cocos2d-x 3d ad-hoc format:__c3t__, __c3b__ files.
 

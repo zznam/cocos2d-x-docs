@@ -90,8 +90,9 @@
 - [高级话题](advanced_topics/index.md)
   - [文件接入](advanced_topics/filesystem.md)
   - [网络访问](advanced_topics/networking.md)
-  - [着色器和材质](advanced_topics/shaders.md)
+  - [OPPO 优化](advanced_topics/oppo.md)
   - [图形性能优化](advanced_topics/optimizing.md)
+  - [着色器和材质](advanced_topics/shaders.md)
   - [SQLite 集成 TODO](advanced_topics/sqlite.md)
 
 ## 环境与工具
@@ -109,5 +110,11 @@
 
 - [引擎工具](editors_and_tools/cocosCLTool.md)
   - [cocos 命令](editors_and_tools/cocosCLTool.md)
-  - [静态库的使用](editors_and_tools/prebuilt_libraries.md)
   - [Creator to Cocos2d-x 插件](editors_and_tools/creator_to_cocos2dx.md)
+
+- [解决方案常见问题](faq/index.md)
+  - [Android](faq/android.md)
+  - [CMake](faq/cmake.md)
+  - [Linux](faq/linux.md)
+  - [MacOS](faq/macos.md)
+  - [Windows](faq/windows.md)
