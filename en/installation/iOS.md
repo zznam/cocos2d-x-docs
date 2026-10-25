@@ -5,7 +5,7 @@ A supported environment. See **[Installation Prerequisites](prerequisites.md)**
 
 ## Setting up Cocos2d-x
 You can get started with __Cocos2d-x__ by either downloading a self-contained
-__.zip__ from the [website](http://cocos2d-x.org/download) or by cloning our
+__.zip__ from the [website](https://cocos2d-x.org/download) or by cloning our
 [GitHub Repo](https://github.com/cocos2d/cocos2d-x). Pick what works for you.
 __There is no need to do both.__
 
@@ -57,6 +57,9 @@ you select you device from the device list.
 ## Starting a new project
 Once everything above works, you can start a new project! To do this, read our
 document on the **[Cocos Command-line tool](../editors_and_tools/cocosCLTool.md)**.
+
+## Troubleshooting
+Please see this [F.A.Q](../faq/macos.md) for troubleshooting help.
 
 ## Revision history
 * 1/2/2017 - slackmoehrle - tested steps, re-worded, added Github, combined iOS and OSX instructions.

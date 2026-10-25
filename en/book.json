@@ -6,35 +6,37 @@
     "variables": {
         "products": [
             {
+                "name": "API Reference",
+                "link": "https://docs.cocos2d-x.org/api-ref/index.html"
+            },
+            {
                 "name": "Cocos Creator",
                 "links": [
                     {
                         "name": "Manual",
-                        "link": "http://docs.cocos.com/creator/manual/en"
+                        "link": "https://docs.cocos2d-x.org/creator/manual/"
                     },
                     {
                         "name": "API",
-                        "link": "http://docs.cocos.com/creator/api/en"
+                        "link": "https://docs.cocos2d-x.org/creator/api/"
                     }
                 ]
-            },
+            }
+        ],
+        "version": [
             {
-                "name": "Cocos2d-x",
+                "name": "3.x",
                 "links": [
                     {
-                        "name": "Manual",
-                        "link": "http://docs.cocos.com/cocos2d-x/manual/en"
+                        "name": "3.x",
+                        "link": "https://docs.cocos2d-x.org/cocos2d-x/v3/en"
                     },
                     {
-                        "name": "API",
-                        "link": "http://www.cocos2d-x.org/docs/api-ref/index.html"
+                        "name": "4.x",
+                        "link": "https://docs.cocos2d-x.org/cocos2d-x/v4/en"
                     }
                 ]
-            },
-            {
-                "name": "AnySDK",
-                "link": "http://docs.anysdk.com/"
             }
         ]
-    }   
+    }
 }

@@ -5,14 +5,7 @@ We always welcome contributions to our documentation.
 
   - Fork our [docs repo](https://github.com/cocos2d/cocos2d-x-docs)
   - __en/__ is for English contributions, __zh/__ is for 中文 contributions.
-  - code blocks must be wrapped in special code to work correctly:
-    - C++ only code block:
-      {% codetabs name="C++", type="cpp" -%}
-      auto mySprite = Sprite::create("mysprite.png", Rect(0,0,40,40));
-      {%- endcodetabs %}
-
-      ![](about-img/codeblock.png "")
-
+  - code blocks must be wrapped in a markdown codeblock. For Markdown help, please see [GitHub Flavored Markdown](https://github.github.com/gfm/)
   - Test your changes using `gitbook build` and `gitbook serve`. Please test in a few web browsers.
   - Submit a *pull request* with your changes and we will review and merge it.
 
@@ -21,9 +14,9 @@ We always welcome contributions to our documentation.
 #### For general questions
 You can ask general questions by using:
 
-  -   Forum (preferred way): http://discuss.cocos2d-x.org/
-  -   Weibo: http://t.sina.com.cn/cocos2dx
-  -   Twitter: http://www.twitter.com/cocos2dx
+  -   [Forum (preferred way)]( https://discuss.cocos2d-x.org/)
+  -   [Weibo]( https://t.sina.com.cn/cocos2dx)
+  -   [Twitter](https://www.twitter.com/cocos2dx)
 
 #### Reporting bugs
 To report bugs, please use the [Issue Tracker](https://github.com/cocos2d/cocos2d-x/issues)
@@ -87,5 +80,5 @@ You can help us spread the word about Cocos2d-x! We would surely appreciate it!
 
   * Talk about us on Facebook! Our [__Facebook Page__](https://www.facebook.com/cocos2dx/)
   * Tweet, Tweet! Our [__Twitter__](https://twitter.com/cocos2dx)
-  * Read our [__Blog__](http://blog.Cocos2d-x.org/) and promote it on your social media.
-  * Become a [__Regional Coordinator__](http://discuss.Cocos2d-x.org/t/we-need-regional-coordinators/24104)
+  * Read our [__Blog__](https://blog.Cocos2d-x.org/) and promote it on your social media.
+  * Become a [__Regional Coordinator__](https://discuss.Cocos2d-x.org/t/we-need-regional-coordinators/24104)

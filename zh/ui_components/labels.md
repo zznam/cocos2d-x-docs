@@ -10,9 +10,9 @@ Cocos2d-x 提供 __`Label`__ 对象给用户，可以使用位图字体，TrueTy
 
 使用位图字体创建标签：
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 auto myLabel = Label::createWithBMFont("bitmapRed.fnt", "Your Text");
-{%- endcodetabs %}
+```
 
 ![](../../en/ui_components/ui_components-img/LabelBMFont.png "")
 
@@ -26,9 +26,9 @@ _TrueType 字体_ 和我们上面了解的位图字体不同，使用这种字�
 
 使用 TrueType 字体创建标签：
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 auto myLabel = Label::createWithTTF("Your Text", "Marker Felt.ttf", 24);
-{%- endcodetabs %}
+```
 
 ![](../../en/ui_components/ui_components-img/LabelTTF.png "")
 
@@ -38,7 +38,7 @@ auto myLabel = Label::createWithTTF("Your Text", "Marker Felt.ttf", 24);
 
 通过以下方式创建一个 `TTFConfig` 对象：
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 // create a TTFConfig files for labels to share
 TTFConfig labelConfig;
 labelConfig.fontFilePath = "myFont.ttf";
@@ -50,7 +50,7 @@ labelConfig.distanceFieldEnabled = false;
 
 // create a TTF Label from the TTFConfig file.
 auto myLabel = Label::createWithTTF(labelConfig, "My Label Text");
-{%- endcodetabs %}
+```
 
 ![](../../en/ui_components/ui_components-img/LabelTTFWithConfig.png "")
 
@@ -62,9 +62,9 @@ auto myLabel = Label::createWithTTF(labelConfig, "My Label Text");
 
 使用系统字体创建标签：
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 auto myLabel = Label::createWithSystemFont("My Label Text", "Arial", 16);
-{%- endcodetabs %}
+```
 
 ![](../../en/ui_components/ui_components-img/LabelWithSystemFont.png "")
 
@@ -74,33 +74,33 @@ auto myLabel = Label::createWithSystemFont("My Label Text", "Arial", 16);
 
 阴影效果：
 
-{% codetabs name="C++", type="cpp" -%}
+```cpp
 auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
 
 // shadow effect is supported by all Label types
 myLabel->enableShadow();
-{%- endcodetabs %}
+```
 
 ![](../../en/ui_components/ui_components-img/LabelWithShadow.png "")
 
 描边效果:
 
-{% codetabs name="C++", type="cpp" -%}
-auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
+```cpp
+auto myLabel = Label::createWithTTF("My Label Text", "myFont.ttf", 16);
 
 // outline effect is TTF only, specify the outline color desired
 myLabel->enableOutline(Color4B::WHITE, 1));
-{%- endcodetabs %}
+```
 
 ![](../../en/ui_components/ui_components-img/LabelWithOutline.png "")
 
 发光效果:
 
-{% codetabs name="C++", type="cpp" -%}
-auto myLabel = Label::createWithTTF("myFont.ttf", "My Label Text", 16);
+```cpp
+auto myLabel = Label::createWithTTF("My Label Text", "myFont.ttf", 16);
 
 // glow effect is TTF only, specify the glow color desired.
 myLabel->enableGlow(Color4B::YELLOW);
-{%- endcodetabs %}
+```
 
 ![](../../en/ui_components/ui_components-img/LabelWithGlow.png "")
